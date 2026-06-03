@@ -84,6 +84,7 @@ main{
     background-color:lightblue;
     /* make main element take all the remaining space in the page, to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px; /* to prevent main content from being hidden behind the fixed header */
 }
 /* Footer */
 footer{
