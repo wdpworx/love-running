@@ -123,7 +123,15 @@ footer{
     /* Main content */
     main{
         /*push main content down to accommodate the larger header */
-        margin-top: 79px;
+        margin-top: 75px;
     }
 
+}
+/* Media Queries for responsive design laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+    /* Header */
+   #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+}
+   
 }
