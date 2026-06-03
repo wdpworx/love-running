@@ -1,137 +1,126 @@
-
 /* google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap");
 
 /* asterisk wildcard selector to overide default styles added by the browser */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* general styles*/
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* generic project styles */
-    color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
-
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* generic project styles */
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
 }
-
 
 /* Header */
 header {
-    background-color: #ffffff;
-    padding : 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
 #menu li {
-    
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 .active {
-    border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
-    background-color: #ffffff;
-    left: 0;
-    width: 100%;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display:none;
-    top:100%;
+  position: absolute;
+  background-color: #ffffff;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
 }
 /* Nav Toggle*/
 #nav-toggle:checked ~ nav {
-    display: block;
-}  
-#nav-toggle {
-    display: none;
-} 
-#nav-toggle-label {
-    font-size: 2rem;
+  display: block;
 }
-
-
+#nav-toggle {
+  display: none;
+}
+#nav-toggle-label {
+  font-size: 2rem;
+}
 
 /* Main */
-main{
-    background-color:lightblue;
-    /* make main element take all the remaining space in the page, to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px; /* to prevent main content from being hidden behind the fixed header */
+main {
+  background-color: lightblue;
+  /* make main element take all the remaining space in the page, to push footer down */
+  flex: 1 0 auto;
+  margin-top: 47px; /* to prevent main content from being hidden behind the fixed header */
 }
 /* Footer */
-footer{
-    background-color:orange;
-
+footer {
+  background-color: orange;
 }
-
-
-
 
 /* Media Queries for responsive design tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width:fit-content;
-        padding-right: 1rem;
-    }
-    #menu{
-        display: flex;
-    }
-    #menu > li {
-        padding-left:  1rem;
-    }
-    .nav-toggle-label {
-        display: none;
-    }
-    #logo {
-        font-size: 200%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
+  /* Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+  #menu {
+    display: flex;
+  }
+  #menu > li {
+    padding-left: 1rem;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
+  #logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
 
-    /* Main content */
-    main{
-        /*push main content down to accommodate the larger header */
-        margin-top: 75px;
-    }
-
+  /* Main content */
+  main {
+    /*push main content down to accommodate the larger header */
+    margin-top: 75px;
+  }
 }
+
 /* Media Queries for responsive design laptops and larger (992px and up) */
+
 @media screen and (min-width: 992px) {
-    /* Header */
-   #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-}
-   
+  /* Header */
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
 }
