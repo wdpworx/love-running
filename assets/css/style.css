@@ -254,7 +254,7 @@ main {
     list-style-type: none;
 }
 
-#social-networks i {
+#social-networks a {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
